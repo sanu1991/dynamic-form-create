@@ -1,0 +1,448 @@
+@use "./themes/generated/variables.base-dark.scss" as baseDark;
+@import "./themes/generated/variables.base.scss";
+
+.app {
+  background-color: darken($base-bg, 5);
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .app .dx-swatch-base-dark {
+    background-color: darken(baseDark.$base-bg, 5);
+  }
+
+  .content {
+    line-height: 1.5;
+    flex-grow: 1;
+
+    h2 {
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .container {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .layout-body {
+    flex: 1;
+    min-height: 0;
+  }
+
+  .content-block {
+    margin-left: 40px;
+    margin-right: 40px;
+    // margin-top: 20px;
+  }
+}
+
+.side-nav-outer-toolbar .dx-drawer {
+  height: calc(100% - 56px);
+}
+
+.screen-x-small .content-block {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.responsive-paddings {
+  padding: 20px;
+
+  .screen-large & {
+    padding: 40px;
+  }
+}
+
+.dx-card.wide-card {
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.with-footer
+  > .dx-scrollable-wrapper
+  > .dx-scrollable-container
+  > .dx-scrollable-content {
+  height: 100%;
+
+  & > .dx-scrollview-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+}
+
+$side-panel-min-width: 50px;
+
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cell-compact {
+  padding: 0 5px !important;
+  height: 30px !important;
+}
+
+.datagrid-close-btn {
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  top: -34px;
+  right: 10%;
+}
+
+.pageCenter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.squreBtn {
+  border-radius: 2px !important;
+}
+
+// .dx-toolbar .dx-toolbar-items-container {
+//   height: 32px;
+// }
+
+// .dx-swatch-additional .dx-treeview-item {
+//   display: block;
+//   cursor: pointer;
+//   padding: 5px 3px;
+//   min-height: 20px;
+//   line-height: 10px;
+// }
+
+// .dx-swatch-additional .dx-treeview-toggle-item-visibility {
+//   position: absolute;
+//   cursor: pointer;
+//   font: 24px/24px DXIcons;
+//   text-align: center;
+//   color: rgba(255, 255, 255, 0.54);
+//   width: 24px;
+//   height: 31px;
+//   top: 0;
+//   left: 0;
+// }
+
+// .dx-swatch-additional .dx-button-has-icon .dx-button-content {
+//   padding: 7px 13px;
+// }
+
+// .reactSelect {
+//   color: red;
+//   z-index: 99999;
+// }
+
+.dx-button-has-icon {
+  border-radius: 2px !important;
+}
+.dx-button-has-icon .dx-button-content {
+  display: flex;
+}
+
+// .dx-texteditor.dx-editor-outlined {
+//   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+// }
+
+// .dx-texteditor.dx-editor-outlined.dx-state-hover {
+//   // -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.87);
+//   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3);
+// }
+
+// .dx-dropdowneditor-icon {
+//   color: rgba(0, 0, 0, 0.25);
+// }
+
+.squreBtn {
+  border-radius: 4px;
+  height: 28px;
+  width: 30px;
+}
+
+.eyeBtn {
+  width: 28px;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.eyeBtnIcon {
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.require::after {
+  // FOR REQUIRED FIELD
+  content: " *";
+  color: red;
+  margin-left: 2px;
+  margin-left: 2px;
+}
+
+// ...........................................................................................
+
+.padding20px {
+  padding: 20px;
+}
+
+.dx-theme-material-typography {
+  font-family: poppins !important;
+}
+
+.dx-swatch-base-dark .dx-widget {
+  font-family: poppins !important;
+}
+
+.dx-widget {
+  font-family: poppins !important;
+}
+
+.dx-theme-material-typography {
+  font-family: poppins !important;
+}
+
+.dx-swatch-base-dark .dx-widget {
+  font-family: poppins !important;
+}
+
+.dx-widget {
+  font-family: poppins !important;
+}
+
+// .dx-button-has-icon .dx-button-content {
+//   padding: 0px !important;
+// }
+
+// .dx-floating-label {
+//   color: red;
+// }
+
+// .dx-toast-stack-up-push-direction {
+//   z-index: 2500;
+// }
+
+// .dx-texteditor.dx-editor-filled .dx-texteditor-input {
+//   // padding: 6px 11px 6px;
+//   padding: 8.4px 11px 8.4px;
+// }
+
+// .dx-texteditor.dx-editor-outlined .dx-texteditor-input {
+//   // padding: 6px 11px 6px;
+//   padding: 8.4px 11px 8.4px;
+// }
+
+// .dx-searchbox.dx-editor-filled .dx-placeholder::before,
+// .dx-searchbox.dx-editor-filled .dx-texteditor-input,
+// .dx-searchbox.dx-editor-outlined .dx-placeholder::before,
+// .dx-searchbox.dx-editor-outlined .dx-texteditor-input {
+//   padding-left: 32.5px !important;
+// }
+
+.toCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.toCenterLeft {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.toCenterRight {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.userProfileDGIcon {
+  color: #bebebe !important;
+  font-size: 17px;
+}
+
+.defaultButtonColor {
+  color: #e0e0e0 !important;
+}
+
+.defaultButtonColor:hover {
+  color: #afafaf !important;
+}
+
+.defaultButtonColor2 {
+  color: #acacac !important;
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+.defaultButtonColor2:hover {
+  color: #777777 !important;
+}
+
+.dataGridAddButton {
+  padding: 0;
+  background: inherit;
+  width: 20px;
+  cursor: pointer;
+  border: 0;
+}
+
+.fontSize12 {
+  font-size: 12px !important;
+}
+
+.dataGridDeleteButtonClass {
+  width: 28px;
+  height: 28px;
+  border-radius: 2px !important;
+}
+
+.dataGridDeleteButtonClass:hover .defaultButtonColor {
+  color: #adadad !important;
+}
+
+.eyeButtonClass {
+  color: #adadad !important;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.pr30 {
+  padding-right: 30px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.fontSize15 {
+  font-size: 15px !important;
+}
+
+// DX-DATA-GRID CSS PROPS---------------------------------------------
+
+// CHANGE SELECT ROW COLOR
+// .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):not(.dx-row-removed) > td {
+//   background-color: rgb(189, 226, 242);
+//   color: unset;
+// }
+
+// HIDE TOOLTIP--
+.dx-datagrid-revert-tooltip {
+  display: none;
+}
+
+#dataGridCompact .dx-datagrid .dx-datagrid-table .dx-header-row > td {
+  padding: 4.8px 10px;
+}
+
+#dataGridCompact .dx-datagrid .dx-row > td {
+  padding: 0px 10px;
+  height: 36.4px;
+}
+
+// CHANGE SELECT ROW COLOR
+// .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):not(.dx-row-removed) > td {
+//   background-color: rgb(189, 226, 242);
+//   color: unset;
+// }
+
+.dx-texteditor.dx-editor-outlined.dx-state-disabled .dx-texteditor-input,
+.dx-texteditor.dx-editor-outlined.dx-state-readonly .dx-texteditor-input,
+.dx-texteditor.dx-editor-outlined.dx-state-readonly.dx-state-hover
+  .dx-texteditor-input {
+  color: rgb(66, 65, 65, 43);
+}
+.dx-texteditor.dx-editor-outlined.dx-state-disabled .dx-texteditor-input,
+.dx-texteditor.dx-editor-outlined.dx-state-readonly .dx-texteditor-input {
+  color: rgb(0 0 0);
+}
+
+.dx-popup-bottom.dx-toolbar .dx-toolbar-items-container {
+  border-top: 1px solid #bdbbbb !important;
+  /* box-shadow: 0px 21px 62px -52px rgba(0, 0, 0, 0.45) inset, */
+  /* 0px 25px 20px -20px rgba(0, 0, 0, 0.45) !important; */
+}
+
+.popupBtn {
+  border-top: 1px solid #bdbbbb !important;
+  /* box-shadow: 0px -25px 20px -20px rgba(163, 159, 159, 0.45) !important; */
+}
+
+.gridBtn {
+  visibility: hidden;
+}
+
+.dx-data-row:hover .gridBtn {
+  visibility: visible;
+}
+
+// .datagridIcon {
+//   height: 12px !important;
+//   width: 12px !important;
+//   font-size: 12px !important;
+// }
+
